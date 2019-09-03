@@ -50,13 +50,7 @@ Next, create a `.babelrc` file in your project with the following:
 }
 ~~~
 
-Alternatively, if you're using Laravel Mix, you can put this in your `webpack.mix.js` file:
-
-~~~js
-mix.babelConfig({
-  plugins: ['@babel/plugin-syntax-dynamic-import'],
-})
-~~~
+Alternatively, if you're using Laravel Mix, dynamic imports are already setup for you.
 
 **Limitation:** When using Laravel Mix (v4) with dynamic imports you cannot write styles within Vue files. As a workaround, you need to drop Mix entirely or downgrade to v3 due to current Webpack limitations ([source](https://github.com/JeffreyWay/laravel-mix/issues/1856#issuecomment-448082909)).
 
